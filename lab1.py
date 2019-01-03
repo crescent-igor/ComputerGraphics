@@ -23,9 +23,17 @@ while True:
     pygame.draw.lines(screen, (0,0,0), False, [(100,350),(45,314)], 1)
     pygame.draw.lines(screen, (0,0,0), False, [(180,206),(200,270)], 1)
     
+
+    pygame.draw.circle(screen, (0,0,0), (100,290), 7, 0)
+    pygame.draw.arc(screen, (0,0,0), (30,280,60,60),-1, 0, 2)
+    
+    # pygame.draw.arc(screen, (0,0,0), (70,300,20,20),-2, 1.5, 2)
+
     #horn
     pygame.draw.lines(screen, (0,0,0), False, [(45,314),(20,260)], 1)
-    pygame.draw.lines(screen, (0,0,0), False, [(50,310),(20,260)], 1)
+    pygame.draw.lines(screen, (0,0,0), False, [(70,294),(20,260)], 1)
+    pygame.draw.lines(screen, (0,0,0), False, [(70,294),(60,270)], 1)
+    pygame.draw.lines(screen, (0,0,0), False, [(90,278),(60,270)], 1)
     
     
     #body
@@ -56,15 +64,18 @@ while True:
     
     pygame.draw.lines(screen, (0,0,0), False, [(425,425),(410,439)], 1)
 
+    #tail
+    pygame.draw.arc(screen, (0,0,0), (470,250,90,20),-3, -1, 1)
+    
+
 
 
     
 
     # pygame.draw.lines(screen, (0,0,0), False, [(1,1),(100,100)], 1)
 
-    # pygame.draw.circle(screen, (255,0,255), (300,300), 10, 0)
-    # pygame.draw.arc(screen, (0,0,0), (60,60,60,60),0.2, 3, 0)
-
+    # pygame.draw.circle(screen, (0,0,0), (100,290), 7, 0)
+    
 
 
     pygame.display.update()
