@@ -29,8 +29,8 @@ def beizer(Cx, Cy):
         t = t+0.005
 
 
-Cx = [[50], [50], [80], [80]]
-Cy = [[35], [70], [40], [80]]
+Cx = [[50], [50], [80], [80]]    #cordinates taken for example  
+Cy = [[35], [70], [40], [80]]    #cordinates taken for example
 
 
 pygame.init()
