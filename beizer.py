@@ -29,18 +29,37 @@ def beizer(Cx, Cy):
         t = t+0.005
 
 
-Cx = [[50], [50], [80], [80]]    #cordinates taken for example  
-Cy = [[35], [70], [40], [80]]    #cordinates taken for example
-
-
 pygame.init()
 screen = pygame.display.set_mode((640, 480))
 screen.fill((255, 255, 255))
 pygame.display.flip()
 
 white = (255, 255, 255)
-
+# left neck
+Cx = [[90], [100], [100], [90]]
+Cy = [[20], [40], [60], [80]]
 beizer(Cx, Cy)
+# right neck
+Cx = [[130], [120], [120], [130]]
+Cy = [[20], [40], [60], [80]]
+beizer(Cx, Cy)
+# top
+Cx = [[90], [110], [110], [130]]
+Cy = [[20], [25], [25], [20]]
+beizer(Cx, Cy)
+# left body
+Cx = [[90], [60], [60], [100]]
+Cy = [[80], [110], [140], [170]]
+beizer(Cx, Cy)
+# right body
+Cx = [[130], [160], [160], [120]]
+Cy = [[80], [110], [140], [170]]
+beizer(Cx, Cy)
+# bottom
+Cx = [[100], [105], [115], [120]]
+Cy = [[170], [170], [170], [170]]
+beizer(Cx, Cy)
+
 
 pygame.display.update()
 
